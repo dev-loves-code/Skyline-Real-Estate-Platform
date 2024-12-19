@@ -1,0 +1,116 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.globe-section {
+  width: 100%;
+  height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: white; 
+  overflow: hidden;
+}
+
+.showcase-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+.showcase-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.showcase-title {
+  color: #2C3E50;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.showcase-subtitle {
+  color: #34495E;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.globe-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.globe-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-detail-popup {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.property-detail-popup h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.property-detail-popup p {
+  margin: 0.5rem 0;
+  color: #7f8c8d;
+}
+
+.property-detail-popup button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #f0d678;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.property-detail-popup button:hover {
+  background: #e2c368;
+}
+
+@media (max-width: 1024px) {
+  .showcase-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .showcase-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .globe-container {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,217 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #2C3E50;
+  box-shadow: 0 2px 4px #f0d678;
+  transition: background-color 0.3s ease;
+}
+
+/* Add this class for home page */
+.navbar.transparent {
+  background: transparent; /* Fully transparent */
+  box-shadow: none; /* No shadow */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  color: #f0d678;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-links {
+  color: #6B735A;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links:hover {
+  color: #f0d678;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #f0d678;
+  transition: width 0.4s ease;
+  position: absolute;
+  bottom: -5px;
+}
+
+.nav-item:nth-last-child(2):after, /* Contact */
+.nav-item:last-child:after {     /* Sign Up/Logout */
+  display: none;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+/* Buttons for Sign Up and Sign Out */
+.nav-button-login, 
+.nav-button-logout {
+  color: #595F4D;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #f0d678;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  display: inline-flex; /* Use flex for consistent alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center;
+}
+
+.nav-button-login:hover, 
+.nav-button-logout:hover {
+  color: #f0d678;
+}
+
+/* Style for Contact link */
+.nav-item a[href*="#contact"] {
+  color: #595F4D;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #f0d678;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  background: none;
+}
+
+.nav-item a[href*="#contact"]:hover {
+  color: #f0d678;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.favorites-icon {
+  color: #f0d678;
+  transition: all 0.3s ease;
+}
+
+.favorites-icon:hover {
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  display: none;
+  color: #f0d678;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 0.5s ease;
+    padding-top: 2rem;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+  
+  .nav-links,
+  .nav-button {
+    padding: 1rem 2rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-button-login, 
+  .nav-button-logout {
+    padding: 1rem 2rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-icon {
+    display: block;
+  }
+  
+  .nav-item:after {
+    display: none;
+  }
+}
+
+/* Add these classes for page content */
+.page-content {
+  padding-top: 80px; /* Ensure this matches the navbar height */
+}
+
+.home-content {
+  padding-top: 0; /* Remove padding on home page */
+}
+
+/* Active state for nav items */
+.nav-item.active .nav-links {
+  color: #f0d678; /* Matches the hover color */
+  font-weight: bold; /* Optional: visually differentiate active links */
+}
+
+.nav-item.active:after {
+  width: 100%; /* Full underline for the active link */
+}

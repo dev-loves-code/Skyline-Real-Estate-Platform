@@ -1,0 +1,127 @@
+/* Reservation Form Container */
+.reservation-form-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f8f8f8 100%);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(44, 62, 80, 0.1);
+  }
+  
+  /* Reservation Form Header */
+  .reservation-form-container h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Labels */
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4D504B;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form Inputs */
+  .form-group input,
+  .form-group .react-datepicker-wrapper input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid rgba(44, 62, 80, 0.1);
+    border-radius: 0.5rem;
+    background: #ffffff;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group .react-datepicker-wrapper input:focus {
+    border-color: #f0d678;
+    box-shadow: 0 0 0 4px rgba(240, 214, 120, 0.3);
+  }
+  
+  /* Check Availability Button */
+  button {
+    display: inline-block;
+    background: #f0d678;
+    color: #2C3E50;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.15);
+  }
+  
+  /* Error Message */
+  .error {
+    color: #e74c3c;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Not Signed In Section */
+  .not-signed-in {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(44, 62, 80, 0.08);
+    margin: 4rem auto;
+    max-width: 500px;
+  }
+  
+  .not-signed-in p {
+    font-size: 1.1rem;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+  }
+  
+  .not-signed-in button {
+    background: #f0d678;
+    color: #2C3E50;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .not-signed-in button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.15);
+  }
+  
+  /* Success/Availability Message */
+  .success,
+  .availability-message {
+    color: #27ae60;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .reservation-form-container {
+      padding: 1.5rem;
+    }
+  
+    .not-signed-in {
+      padding: 2rem;
+    }
+  }
+  

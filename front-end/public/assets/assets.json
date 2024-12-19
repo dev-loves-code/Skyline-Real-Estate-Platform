@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "numberOfBedrooms": 4,
+        "category": "villa",
+        "numberOfBathrooms": 3,
+        "interior": 1500,
+        "exterior": 500,
+        "price": 150000,
+        "location": "Los Angeles",
+        "name": "Beautiful Villa in Los Angeles",
+        "description": "A stunning villa with great amenities.",
+        "images": [
+            "/assets/property001/image1.webp",
+            "/assets/property001/image2.webp",
+            "/assets/property001/image3.webp",
+            "/assets/property001/image4.webp",
+            "/assets/property001/image5.webp"
+        ],
+        "type": "sale",
+        "latitude": 34.052235,
+        "longitude": -118.243683,
+        "agentId": 101
+    },
+    {
+        "id": 2,
+        "numberOfBedrooms": 5,
+        "category": "duplex",
+        "numberOfBathrooms": 4,
+        "interior": 2000,
+        "exterior": 600,
+        "price": 250000,
+        "location": "New York",
+        "name": "Modern Duplex in New York",
+        "description": "A stylish duplex located in the heart of the city.",
+        "images": [
+            "/assets/property002/image1.webp",
+            "/assets/property002/image2.webp",
+            "/assets/property002/image3.webp",
+            "/assets/property002/image4.webp"
+        ],
+        "type": "sale",
+        "latitude": 40.712776,
+        "longitude": -74.005974,
+        "agentId": 102
+    },
+    {
+        "id": 3,
+        "numberOfBedrooms": 6,
+        "category": "castle",
+        "numberOfBathrooms": 5,
+        "interior": 4000,
+        "exterior": 1200,
+        "price": 900000,
+        "location": "London",
+        "name": "Historic Castle in London",
+        "description": "A magnificent castle with rich history.",
+        "images": [
+            "/assets/property003/image1.webp",
+            "/assets/property003/image2.webp",
+            "/assets/property003/image3.webp",
+            "/assets/property003/image4.webp"
+        ],
+        "type": "sale",
+        "latitude": 51.507351,
+        "longitude": -0.127758,
+        "agentId": 103
+    },
+    {
+        "id": 4,
+        "numberOfBedrooms": 5,
+        "category": "villa",
+        "numberOfBathrooms": 4,
+        "interior": 1800,
+        "exterior": 700,
+        "price": 300000,
+        "location": "Paris",
+        "name": "Charming Villa in Paris",
+        "description": "A beautiful villa with scenic views.",
+        "images": [
+            "/assets/property004/image1.webp",
+            "/assets/property004/image2.webp",
+            "/assets/property004/image3.webp",
+            "/assets/property004/image4.webp",
+            "/assets/property004/image5.webp",
+            "/assets/property004/image6.webp"
+        ],
+        "type": "rent",
+        "latitude": 48.856613,
+        "longitude": 2.352222
+    },
+    {
+        "id": 5,
+        "numberOfBedrooms": 4,
+        "category": "duplex",
+        "numberOfBathrooms": 3,
+        "interior": 2200,
+        "exterior": 800,
+        "price": 450000,
+        "location": "Berlin",
+        "name": "Luxury Duplex in Berlin",
+        "description": "A high-end duplex with modern amenities.",
+        "images": [
+            "/assets/property005/image1.webp",
+            "/assets/property005/image2.webp",
+            "/assets/property005/image3.webp",
+            "/assets/property005/image4.webp"
+        ],
+        "type": "rent",
+        "latitude": 52.520008,
+        "longitude": 13.404954
+    },
+    {
+        "id": 6,
+        "numberOfBedrooms": 5,
+        "category": "castle",
+        "numberOfBathrooms": 4,
+        "interior": 5000,
+        "exterior": 1500,
+        "price": 950000,
+        "location": "Rome",
+        "name": "Elegant Castle in Rome",
+        "description": "An elegant castle with breathtaking architecture.",
+        "images": [
+            "/assets/property006/image1.webp",
+            "/assets/property006/image2.webp",
+            "/assets/property006/image3.webp",
+            "/assets/property006/image4.webp"
+        ],
+        "type": "sale",
+        "latitude": 41.902782,
+        "longitude": 12.496366,
+        "agentId": 104
+    },
+    {
+        "id": 7,
+        "numberOfBedrooms": 6,
+        "category": "villa",
+        "numberOfBathrooms": 5,
+        "interior": 3500,
+        "exterior": 1300,
+        "price": 750000,
+        "location": "Madrid",
+        "name": "Spacious Villa in Madrid",
+        "description": "A spacious villa with a large garden.",
+        "images": [
+            "/assets/property007/image1.webp",
+            "/assets/property007/image2.webp",
+            "/assets/property007/image3.webp",
+            "/assets/property007/image4.webp",
+            "/assets/property007/image5.webp",
+            "/assets/property007/image6.webp"
+        ],
+        "type": "rent",
+        "latitude": 40.416775,
+        "longitude": -3.703790
+    },
+    {
+        "id": 8,
+        "numberOfBedrooms": 4,
+        "category": "duplex",
+        "numberOfBathrooms": 3,
+        "interior": 1600,
+        "exterior": 550,
+        "price": 200000,
+        "location": "Tokyo",
+        "name": "Cozy Duplex in Tokyo",
+        "description": "A cozy duplex with modern design.",
+        "images": [
+            "/assets/property008/image1.webp",
+            "/assets/property008/image2.webp",
+            "/assets/property008/image3.webp",
+            "/assets/property008/image4.webp",
+            "/assets/property008/image5.webp"
+        ],
+        "type": "sale",
+        "latitude": 35.689487,
+        "longitude": 139.691711,
+        "agentId": 105
+    }
+  ]
+  

@@ -1,0 +1,33 @@
+[
+    {
+        "agentId": 101,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "picture": "/assets/agents/agent1.jpg"
+    },
+    {
+        "agentId": 102,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "picture": "/assets/agents/agent2.jpg"
+    },
+    {
+        "agentId": 103,
+        "name": "Robert Brown",
+        "email": "robertbrown@example.com",
+        "picture": "/assets/agents/agent3.jpg"
+    },
+    {
+        "agentId": 104,
+        "name": "Emily White",
+        "email": "emilywhite@example.com",
+        "picture": "/assets/agents/agent4.jpg"
+    },
+    {
+        "agentId": 105,
+        "name": "Michael Green",
+        "email": "michaelgreen@example.com",
+        "picture": "/assets/agents/agent5.jpg"
+    }
+  ]
+  
