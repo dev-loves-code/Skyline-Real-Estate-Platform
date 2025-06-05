@@ -3,15 +3,17 @@ import Globe from "react-globe.gl";
 import { motion } from "framer-motion";
 import { LocationOn } from "@mui/icons-material";
 import "./PropertyShowcase.css";
- 
+
 const PropertyShowcase = () => {
   const [properties, setProperties] = useState([]);
   const [selectedProperty, setSelectedProperty] = useState(null);
- 
+
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await fetch("http://localhost:5000/admin/get-properties");
+        const response = await fetch(
+          "http://localhost:5000/admin/get-properties"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch properties");
         }
@@ -21,19 +23,19 @@ const PropertyShowcase = () => {
         console.error("Error fetching properties:", error);
       }
     };
- 
+
     fetchProperties();
   }, []);
- 
+
   const handlePropertyClick = (property) => {
     setSelectedProperty(property);
   };
- 
+
   return (
     <div className="globe-section">
       <div className="showcase-content">
         <div className="showcase-text">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -47,8 +49,8 @@ const PropertyShowcase = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="showcase-subtitle"
           >
-            Discover properties from around the world. 
-            Explore, compare, and find your perfect location.
+            Discover properties from around the world. Explore, compare, and
+            find your perfect location.
           </motion.p>
         </div>
         <div className="globe-container">
@@ -75,7 +77,7 @@ const PropertyShowcase = () => {
           />
         </div>
       </div>
- 
+
       {selectedProperty && (
         <motion.div
           className="property-detail-popup"
@@ -88,12 +90,14 @@ const PropertyShowcase = () => {
             <LocationOn /> {selectedProperty.location}
           </p>
           <p>Price: ${selectedProperty.price.toLocaleString()}</p>
-          <p>Type: {selectedProperty.type === "sale" ? "For Sale" : "For Rent"}</p>
+          <p>
+            Type: {selectedProperty.type === "sale" ? "For Sale" : "For Rent"}
+          </p>
           <button onClick={() => setSelectedProperty(null)}>Close</button>
         </motion.div>
       )}
     </div>
   );
 };
- 
+
 export default PropertyShowcase;

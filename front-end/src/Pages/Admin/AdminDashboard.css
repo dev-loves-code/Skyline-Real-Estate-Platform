@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   font-family: Arial, sans-serif;
 }
@@ -69,7 +70,8 @@ body, html {
   color: white;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 20px;
   color: #333;
 }
@@ -89,7 +91,7 @@ h2 {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .data-table th,
