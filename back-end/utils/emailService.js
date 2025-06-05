@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'monzeryara@gmail.com',
-    pass: 'mkzfaguvwukpynvy'
+    user: 'your-email',
+    pass: 'the-pass'
   },
  
   logger: true,
@@ -19,7 +19,7 @@ async function sendReservationNotification(reservationDetails, agentDetails) {
     });
 
     const mailOptions = {
-      from: 'SkylineREAgency@gmail.com',
+      from: 'email',
       to: agentDetails.email,
       subject: `New Reservation for Property ${reservationDetails.propertyId}`,
       text: `
