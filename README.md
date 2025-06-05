@@ -65,7 +65,7 @@ Before running it, make sure you create a .env file in /back-end with your secre
 Then open emailService.js and configure your Nodemailer transporter properly. Yes, we left you something to do.
 PS: If your emails don’t send, blame Google’s SMTP settings. Then fix it.
 
-###3. Frontend
+### 3. Frontend
 cd ../front-end
 npm install
 npm start
