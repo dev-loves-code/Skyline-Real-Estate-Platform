@@ -9,10 +9,11 @@ Welcome to **Skyline** — your friendly full-stack real estate platform where p
 Skyline is a web app for buying dreams (aka viewing properties). It lets users:
 - Browse beautiful buildings,
 - Like the ones they’ll never afford,
-- Make reservations to pretend they might someday.
+- Make reservations to pretend they might someday
+- Book rentals and live the moment.
 
 Meanwhile:
-- **Agents** manage their listings like real professionals.
+- **Agents** get notified about their listings.
 - **Admins**... well, they run the world (of this app).
 
 ---
@@ -26,7 +27,6 @@ Meanwhile:
 | Database    | MySQL               |
 | Styling     | CSS Modules / MUI   |
 | Email       | Nodemailer          |
-| Auth        | Custom / JWT (maybe) |
 
 ---
 
@@ -39,9 +39,8 @@ Meanwhile:
 - See agent details for actual conversations
 
 ### 🧑‍💼 For Agents
-- Add/Edit properties
+- Get notified when a client schedule a showing.
 - View all reservations under their listings
-- Do the things agents do
 
 ### 🛡️ For Admins
 - Full control over users and properties
